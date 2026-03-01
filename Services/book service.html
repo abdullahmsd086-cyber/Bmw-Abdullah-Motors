@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Service | BMW Abdullah Motors</title>
+    <link rel="icon" href="../logo.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- Premium Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <img src="../logo.png" alt="BMW Logo" class="loader-logo"><br>
+            <p class="loading-text"><b>BMW Abdullah Motors</b></p><br>
+            <p class="loading-text">Loading... Please Wait</p>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../logo.png" width="40px">
+                BMW <span>Abdullah Motors</span>
+            </div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+            <ul id="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../services.html">Service</a></li>
+                <li><a href="book service.html" class="active">Book This Service</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="booking">
+        <div class="overlay"></div>
+
+        <div class="booking-content">
+            <h1>Book a BMW Service</h1>
+            <p>Schedule professional maintenance or repairs for your BMW.</p>
+
+            <form class="booking-form">
+
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+
+                <input type="text" placeholder="BMW Model (e.g. M4, X6, iX3)" required>
+
+                <select required>
+                    <option value="">Select Service</option>
+                    <option>Engine Check</option>
+                    <option>Brake Inspection</option>
+                    <option>Battery Service</option>
+                    <option>Engine Repairs</option>
+                    <option>Transmission Service</option>
+                    <option>Brake System Repair</option>
+                    <option>Electrical Repairs</option>
+                    <option>Suspension & Steering</option>
+                    <option>Body & Paint Works</option>
+                    <option>Performance Tuning</option>
+                    <option>Interior Upgrades</option>
+                    <option>Exterior Styling</option>
+                    <option>Towing Service</option>
+                    <option>Flat Tire Help</option>
+                    <option>Battery Jump Start</option>
+                </select>
+
+                <input type="date" required>
+
+                <textarea placeholder="Describe the issue (optional)"></textarea>
+
+                <button type="submit" class="btn">Confirm Booking</button>
+
+            </form>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+
+</html>
